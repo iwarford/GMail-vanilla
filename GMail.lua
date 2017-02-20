@@ -373,7 +373,7 @@ function GMail:SendMail()
 				subjectstr = subjectstr .. "[" .. name .. "]"
 			end
 
-			SendMail(val.to, subjectstr, format(GMAIL_ITEMNUM, key, this.total))
+			SendMail(val.to, subjectstr,"")
 		end
 
 		GMailGlobalFrame.queue[key] = nil
